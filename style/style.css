@@ -30,8 +30,8 @@ h3 {
     gap: 70px;
 }
 
-.nav-icon{
-    color: darkorange;
+.nav-icon {
+    color: rgb(6, 210, 210);
 }
 
 .nav-item,
@@ -46,7 +46,7 @@ li {
 
 .nav-item,
 a {
-    color: #ffffff;
+    /* color: #dcdcdc; */
     text-decoration: none;
     justify-content: end;
 }
@@ -66,27 +66,20 @@ a:hover {
 
 /* header section style */
 .header-container {
-    /* gap: 10px; */
-    /* width: 1500px; */
-    height: 400px;
+
+    height: 700px;
     width: 1440px;
     margin: 0px auto;
-    display: flex;
-    font-size:small;
+    position: relative;
+    /* display: flex; */
+    font-size: small;
     background-image: url("../image/Images\ 2.png");
     background-repeat: no-repeat;
 
 }
 
 
-.header-desacription {
-    /* background-image: url("../image/Images\ 2.png"); */
-    /* background-position: center; */
-    /* background-size: cover; */
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-}
+
 /* 
 #shape {
     font-family: 'Courier New', Courier, monospace;
@@ -94,33 +87,32 @@ a:hover {
 } */
 
 /* mani related styles */
-.main-container {
-    /* color: #d1bcbc */
-}
+.main-container {}
 
 
-.M-desacription-1{
+.M-desacription-1 {
     text-align: center;
     align-items: center;
 }
 
 .M-desacription-1 .image-1 img {
     align-content: center;
-    text-align:end;
+    text-align: end;
 }
 
 .M-desacription-1,
 .p {
     text-align: center;
     color: #ffffff;
-    font-size:small;
+    font-size: small;
 }
 
 .image-1 {
     cursor: pointer;
     margin: 5px;
     padding: 0px auto;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     color: #ccc;
     font-size: 0.9em;
     gap: 15px;
@@ -128,20 +120,23 @@ a:hover {
 }
 
 .image-1 img {
-    width: 70px;
-    height: 70px;
+    width: 10rem;
+    height: 10rem;
     border-radius: 50%;
+    border: 3px solid #222;
+
 }
 
-.M-desacription-2{
-    width: fixed (1458px) ;
-    height:Hug (370px) ;
-    top: 1365px; ;
-    left:190px ;
-    gap:60px ;
+.M-desacription-2 {
+    width: fixed (1458px);
+    height: Hug (370px);
+    top: 1370px;
+    left: 190px;
+    gap: 60px;
 }
-/* .M-desacription-2 .about-items {
-    background-color: #121315;
+
+.M-desacription-2 .about-items {
+    background-color: #222;
     color: #ccc;
     font-size: 10px;
     display: flex;
@@ -150,17 +145,15 @@ a:hover {
     gap: 10px;
     text-align: left;
 
-} */
+}
 
 .image-2 img {
     width: 365px;
     height: 310px;
-    top: 32px; ;
+    top: 32px;
     left: 660px;
     border-radius: 18px;
-    /* margin-right: 20px;
-    border: 1px solid rgb(75, 67, 56);
-    border-radius: 5px; */
+
 }
 
 #button {
@@ -190,7 +183,7 @@ a:hover {
     border: 1px solid black;
     display: flex;
     grid-template-rows: auto;
-    background: #121315;
+    background: #222;
     text-align: left;
     margin: 0px;
     padding: 30px;
@@ -218,26 +211,27 @@ th {
     grid-template-columns: (1, 2fr);
 }
 
-.M-desacription-4{
+.M-desacription-4 {
     text-align: center;
     margin: 30px;
 }
-.M-desacription-4 p{
-    font-size:small;
+
+.M-desacription-4 p {
+    font-size: small;
 }
 
 .image-4 {
-   
+
     padding: 5px;
-    background-color: #121315;
+    background-color: #222;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     border-radius: 5px;
-     
- }
 
-.image-4 img{
+}
+
+.image-4 img {
     width: 120px;
     height: 100px;
     border-radius: 5px;
@@ -247,9 +241,9 @@ th {
 .footer-container {
     position: relative;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     /* gap: 2em; */
-    padding:0px 80px 0px 80px ;
+    padding: 0px 80px 0px 80px;
 }
 
 footer {
@@ -257,7 +251,7 @@ footer {
     padding: 30px;
     margin: 0px auto;
     color: #fff;
-    background-color: #121315;
+    background-color: #222;
     align-items: center;
 }
 
@@ -278,9 +272,9 @@ footer a {
     font-size: small;
 }
 
-.footer-bottom p{
+.footer-bottom p {
     text-align: center;
-    font-size:  15px;
+    font-size: 15px;
     border-top: 2px solid rgb(96, 92, 92);
     padding-top: 20px;
 }
