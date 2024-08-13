@@ -8,18 +8,18 @@
 
 h1 {
     color: rgba(241, 237, 235, 0.858);
-    font-size: 50px;
+    font-size: 60px;
     font-weight: bolder;
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 50px;
     font-weight: bolder;
 
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bolder;
 }
 
@@ -53,7 +53,7 @@ a {
 
 .nav-item,
 a:hover {
-    color: #c7be0b;
+    color: #d00404;
 }
 
 .nav-item,
@@ -66,100 +66,27 @@ a:hover {
 
 /* header section style */
 .header-container {
-
-    height: 700px;
+    height: 710px;
     width: 1440px;
-    margin: 0px auto;
-    position: relative;
-    /* display: flex; */
-    font-size: small;
-    background-image: url("../image/Images\ 2.png");
-    background-repeat: no-repeat;
-
-}
-
-
-
-/* 
-#shape {
-    font-family: 'Courier New', Courier, monospace;
-    font-style: italic;
-} */
-
-/* mani related styles */
-.main-container {}
-
-
-.M-desacription-1 {
-    text-align: center;
-    align-items: center;
-}
-
-.M-desacription-1 .image-1 img {
-    align-content: center;
-    text-align: end;
-}
-
-.M-desacription-1,
-.p {
-    text-align: center;
-    color: #ffffff;
+    top: 0px;
+    left: 0px;
+    background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
+    background-position: center;
     font-size: small;
 }
 
-.image-1 {
-    cursor: pointer;
-    margin: 5px;
-    padding: 0px auto;
+.header-desacription {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    color: #ccc;
-    font-size: 0.9em;
-    gap: 15px;
-    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.image-1 img {
-    width: 10rem;
-    height: 10rem;
-    border-radius: 50%;
-    border: 3px solid #222;
-
-}
-
-.M-desacription-2 {
-    width: fixed (1458px);
-    height: Hug (370px);
-    top: 1370px;
-    left: 190px;
-    gap: 60px;
-}
-
-.M-desacription-2 .about-items {
-    background-color: #222;
-    color: #ccc;
-    font-size: 10px;
-    display: flex;
-    margin: 10px;
-    padding: 5px;
-    gap: 10px;
-    text-align: left;
-
-}
-
-.image-2 img {
-    width: 365px;
-    height: 310px;
-    top: 32px;
-    left: 660px;
-    border-radius: 18px;
-
-}
-
-#button {
+#button-1 {
     background-color: rgba(199, 55, 7, 0.858);
-    border-radius: 15px;
-    padding: 5px 20px;
+    border-radius: 45px;
+    padding: 15px 60px;
+    font-size: 20px;
     border: none;
     color: #fff;
     font-weight: bolder;
@@ -169,25 +96,119 @@ a:hover {
 #Download {
     background-color: rgb(4, 4, 4);
     color: #fff;
-    border-radius: 15px;
-    padding: 5px 20px;
-    border: 1PX solid white;
+    border-radius: 30px;
+    padding: 15px 60px;
+    font-size: 20px;
+    border: 1px solid white;
     font-weight: bolder;
 
 }
 
-/* .M-desacription-3,td{
-    
-} */
-.Calculator {
-    border: 1px solid black;
+/*mani related styles */
+
+.M-desacription-1 {
+    text-align: center;
+    align-items: center;
+    margin: 50px 100px;
+}
+
+.M-desacription-1 p {
+    text-align: center;
+    color: #a09e9e;
+    font-size: medium;
+}
+
+.image-1 {
+    cursor: pointer;
+    margin-top: 4rem;
+    padding: 0px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    color: #ccc;
+    font-size: 0.8em;
+    gap: 15px;
+    align-items: center;
+}
+
+.image-1 img {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    border: 3px solid #222;
+
+}
+
+.M-desacription-2 {
+    width: fixed (1458px);
+    height: Hug (370px);
+    top: 1370px;
+    left: 390px;
+    gap: 60px;
+    margin: 50px 100px;
+
+}
+
+.M-desacription-2 .about-items {
+    background-color: #222;
+    color: #ccc;
+    font-size: 10px;
     display: flex;
-    grid-template-rows: auto;
-    background: #222;
+    margin: 50px;
+    padding: 35px 50px;
+    gap: 5px;
+    align-items: center;
+    justify-content: space-between;
     text-align: left;
-    margin: 0px;
-    padding: 30px;
-    gap: 30px;
+    border-radius: 18px;
+    padding: 30x;
+}
+
+.image-2 img {
+    width: 365px;
+    height: 310px;
+    top: 32px;
+    left: 660px;
+    border-radius: 18px;
+    object-fit: none;
+    object-position: 66% 33%;
+}
+
+.M-desacription-2 p {
+    font-size: medium;
+    text-align: start;
+}
+
+#button-2 {
+    background-color: rgba(199, 55, 7, 0.858);
+    border-radius: 45px;
+    padding: 15px 70px;
+    font-size: 20px;
+    border: none;
+    color: #fff;
+    font-weight: bolder;
+}
+
+.M-desacription-3 p {
+    text-align: left;
+    font-size: medium;
+}
+
+.sub-tittle {
+    margin: 5rem 5rem 5rem 25rem;
+}
+
+.Calculator-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: #222;
+    align-items: center;
+    justify-content: space-between;
+    height: 500px;
+}
+
+.BMI-Chart {
+    margin: 2rem 12rem 12rem 12rem;
+    font-size: medium;
 }
 
 table {
@@ -196,28 +217,60 @@ table {
 
 td,
 th {
-    border: 1px solid gray;
-    padding: 5px 10px;
+    border: 1px solid rgb(90, 88, 92);
+    padding: .9rem 2rem;
+    text-align: justify;
 }
 
-.box {
-    border: 1px solid slategrey;
-    background-color: grey;
-    gap: 5px;
+td {
+    color: #ccc;
 }
 
 .Calculate-box {
     display: grid;
-    grid-template-columns: (1, 2fr);
+    grid-template-columns: (2, 1fr);
+}
+ 
+input[type=text] {
+    width: 20rem;
+    height: 3rem;
+    margin: .4rem .2rem;
+    box-sizing: border-box;
+    border: none;
+    border-radius: .5rem;
+    background: rgb(54, 54, 54);
+    text-align: justify;
+    color: #ccc;
+    font-size: medium;
+}
+.calculate-item ,#box-3{
+    grid-column: span 2;
+    
+}
+.box-3{
+    grid-column: span 2;
+}
+
+#button-3 {
+    background-color: rgba(199, 55, 7, 0.858);
+    border-radius: 45px;
+    padding: 15px 70px;
+    font-size: 20px;
+    border: none;
+    color: #fff;
+    font-weight: bolder;
+    margin: 1.8rem 0rem;
 }
 
 .M-desacription-4 {
     text-align: center;
-    margin: 30px;
+    /* margin: 30px; */
+    margin: 50px 100px;
+
 }
 
 .M-desacription-4 p {
-    font-size: small;
+    font-size: medium;
 }
 
 .image-4 {
@@ -232,9 +285,14 @@ th {
 }
 
 .image-4 img {
-    width: 120px;
-    height: 100px;
+    width: 370px;
+    height: 300px;
     border-radius: 5px;
+
+}
+
+image div {
+    position: absolute;
 }
 
 /* footer related styles */
@@ -244,6 +302,7 @@ th {
     grid-template-columns: repeat(3, 1fr);
     /* gap: 2em; */
     padding: 0px 80px 0px 80px;
+
 }
 
 footer {
@@ -253,7 +312,7 @@ footer {
     color: #fff;
     background-color: #222;
     align-items: center;
-}
+ }
 
 .menu {
     list-style: none;
@@ -262,19 +321,25 @@ footer {
 
 footer p {
     color: #ccc;
-    font-size: 13px;
+    font-size: 15px;
     text-align: left;
 }
 
 footer a {
     color: #c8bfbf;
     text-decoration: none;
-    font-size: small;
+    font-size: 20px;
 }
 
 .footer-bottom p {
     text-align: center;
-    font-size: 15px;
+    font-size: 20px;
     border-top: 2px solid rgb(96, 92, 92);
-    padding-top: 20px;
+    padding-top: 3rem;
+    margin: 5px 100px;
+
+}
+
+@media screen and (max-width:576px) and (min-width:577px) {
+    
 }
