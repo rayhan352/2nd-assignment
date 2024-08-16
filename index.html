@@ -12,22 +12,20 @@
 
 <body class="body-container">
     <header class="header-container">
-        <div class="nav-desacription">
-            <nav class="navber">
-                <div class="nav-icon">
-                    <a href="Fitness">Fitness</a>
-                </div>
-                <div>
-                    <ul class="nav-item">
-                        <!-- <li><a href="./image/trainer1.png">Home</a></li> -->
-                        <li><a href="#Home"> <button class="nav-button">Home</button> </a></li>
-                        <li><a href="#Service">Service</a></li>
-                        <li><a href="#Contact">Contact</a></li>
-                        <li><a href="#About">About</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+        <nav class="navber">
+            <div class="nav-icon">
+                <a href="Fitness">Fitness</a>
+            </div>
+            <div>
+                <ul class="nav-item">
+                    <!-- <li><a href="./image/trainer1.png">Home</a></li> -->
+                    <li><a href="#Home"> <button class="nav-button">Home</button> </a></li>
+                    <li><a href="#Service">Service</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <li><a href="#About">About</a></li>
+                </ul>
+            </div>
+        </nav>
         <div class="header-desacription">
             <div>
                 <h1> Get body in <br> <span id="shape">shape</span> & stay <br>
@@ -147,7 +145,24 @@
                             or access to gym.
                         </p>
                     </div>
-                    <div class="calculate-item">
+                    <div class="input_fields">
+                        <input type="text" placeholder="Heigth/cm" class="Height input-box">
+                        <input type="text" placeholder="width/kg" class="width input-box">
+                        <input type="text" placeholder="Age" class="age input-box">
+                        <select name="sex" class="sex input-box" id="">
+                            <option value="Sex">Sex</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                        <select class="activity input-box" name="Select an activity factor" id="">
+                            <option value="Select an activity fector">Select an activity fector</option>
+                            <option value="sports">Sports</option>
+                            <option value="gym">Gym</option>
+                        </select>
+                    </div>
+                    <button id="button-3">Calculate</button>
+
+                    <!-- <div class="calculate-item">
                         <div id="box-1">
                             <input type="text" value="  Height / cm">
                             <input type="text" value=" Weight / kg">
@@ -160,7 +175,7 @@
                             <input type="text" value="  Select an activity factor ">
                         </div>
                         <button id="button-3">Calculate</button>
-                    </div>
+                    </div> -->
                 </div>
             </div>
 

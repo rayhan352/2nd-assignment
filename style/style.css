@@ -27,7 +27,10 @@ h3 {
 
 .navber {
     display: flex;
-    gap: 70px;
+    justify-content: space-between;
+    display: flex;
+    padding: 2rem 10rem 2rem 10rem;
+    font-size: 2rem;
 }
 
 .nav-icon {
@@ -80,6 +83,14 @@ a:hover {
     grid-template-columns: repeat(2, 1fr);
     background-repeat: no-repeat;
     background-position: center;
+    justify-content: space-between;
+    display: flex;
+    padding: 3rem 10rem 3rem 10rem;
+    gap: 10rem;
+}
+
+.header-desacription #shape {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #button-1 {
@@ -230,7 +241,7 @@ td {
     display: grid;
     grid-template-columns: (2, 1fr);
 }
- 
+
 input[type=text] {
     width: 20rem;
     height: 3rem;
@@ -243,11 +254,14 @@ input[type=text] {
     color: #ccc;
     font-size: medium;
 }
-.calculate-item ,#box-3{
+
+.calculate-item,
+#box-3 {
     grid-column: span 2;
-    
+
 }
-.box-3{
+
+.box-3 {
     grid-column: span 2;
 }
 
@@ -312,7 +326,7 @@ footer {
     color: #fff;
     background-color: #222;
     align-items: center;
- }
+}
 
 .menu {
     list-style: none;
@@ -340,6 +354,4 @@ footer a {
 
 }
 
-@media screen and (max-width:576px) and (min-width:577px) {
-    
-}
+@media screen and (max-width:576px) and (min-width:577px) {}
