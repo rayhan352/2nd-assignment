@@ -1,9 +1,13 @@
 /* header styles */
 /* navber related styles */
 /* font-family: "Azeret Mono",monospace; */
-.body-container {
+@import url('https://fonts.cdnfonts.com/css/miama-nueva');
+body {
     background-color: rgb(0, 0, 0);
     color: #fff;
+}
+.display{
+    display: none;
 }
 
 h1 {
@@ -24,77 +28,75 @@ h3 {
 }
 
 /* nav section style */
-
-.navber {
+#font{
+    font-family: 'Miama Nueva', sans-serif;
+                                                
+}
+nav > img{
+    width: 30%;
+    display: none;
+}
+.manu-bar{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+}
+.nav-items{
     display: flex;
-    padding: 2rem 10rem 2rem 10rem;
-    font-size: 2rem;
-}
+    flex-direction: row;
+    gap: 3rem;
+    align-items: center;
+    border: 1px solid white;
+    padding: 0.5rem 1rem;
+    border-radius: 4rem;
 
-.nav-icon {
-    color: rgb(6, 210, 210);
+    
 }
-
-.nav-item,
-li {
+.brand{
+    color: #E6533C;
+}
+.nav-items li{
     list-style: none;
-    display: flex;
-    margin-right: 10px;
-    padding: 2px 0px;
-    text-align: right;
+    color: #fff;
+    font-size: 1.5rem;
 }
-
-
-.nav-item,
-a {
-    /* color: #dcdcdc; */
+.nav-items li a{
+    color: #fff;
     text-decoration: none;
-    justify-content: end;
-}
+    padding: 0.5rem 1.4rem;
 
-.nav-item,
-a:hover {
-    color: #d00404;
-}
 
-.nav-item,
-.home {
-    border: 1px solid grey;
-    border-radius: 15px;
-    padding: 0px 10px;
 }
+.nav-items li a:hover{
 
+    border-radius: 4rem;
+    background-color: #E6533C;    
+
+}
 
 /* header section style */
-.header-container {
-    height: 710px;
-    width: 1440px;
-    top: 0px;
-    left: 0px;
-    background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
-    background-position: center;
-    font-size: small;
+.header-section {
+    height: fit-content;
+    max-width: 1400px;
+    margin: auto;
+    background: linear-gradient( rgb(4, 0, 0), rgba(158, 156, 156, 0.171),rgb(4, 0, 0) 100%);
 }
 
 .header-desacription {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    background-repeat: no-repeat;
-    background-position: center;
     justify-content: space-between;
     display: flex;
-    padding: 3rem 10rem 3rem 10rem;
-    gap: 10rem;
+    flex-direction: row;
+    gap: 2rem;
+}
+.header-image img{
+    width: 100%;
 }
 
-.header-desacription #shape {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+
 
 #button-1 {
-    background-color: rgba(199, 55, 7, 0.858);
+    background-color: #E6533C;
     border-radius: 45px;
     padding: 15px 60px;
     font-size: 20px;
@@ -118,9 +120,10 @@ a:hover {
 /*mani related styles */
 
 .M-desacription-1 {
+    max-width: 1400px;
+    margin: auto;
     text-align: center;
     align-items: center;
-    margin: 50px 100px;
 }
 
 .M-desacription-1 p {
@@ -132,7 +135,7 @@ a:hover {
 .image-1 {
     cursor: pointer;
     margin-top: 4rem;
-    padding: 0px auto;
+    padding:  auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     color: #ccc;
@@ -150,39 +153,33 @@ a:hover {
 }
 
 .M-desacription-2 {
-    width: fixed (1458px);
-    height: Hug (370px);
-    top: 1370px;
-    left: 390px;
-    gap: 60px;
-    margin: 50px 100px;
+    max-width: 1400px;
+    margin: auto;
+    background-color: gray;
+    /* width: 100%; */
 
 }
-
-.M-desacription-2 .about-items {
-    background-color: #222;
-    color: #ccc;
-    font-size: 10px;
+.about{
+    width:calc(100% - 3rem);
+    padding: 2rem;
     display: flex;
-    margin: 50px;
-    padding: 35px 50px;
-    gap: 5px;
-    align-items: center;
+    flex-direction: row;
     justify-content: space-between;
-    text-align: left;
-    border-radius: 18px;
-    padding: 30x;
+
+}
+.about > div{
+    width: 50%;
+    border-radius: 2rwm;
+}
+.run{
+    border-radius: 1rem;
+    /* background-color: red; */
+    background-image: url("../image/run.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.image-2 img {
-    width: 365px;
-    height: 310px;
-    top: 32px;
-    left: 660px;
-    border-radius: 18px;
-    object-fit: none;
-    object-position: 66% 33%;
-}
 
 .M-desacription-2 p {
     font-size: medium;
@@ -190,13 +187,19 @@ a:hover {
 }
 
 #button-2 {
-    background-color: rgba(199, 55, 7, 0.858);
+    background-color: #E6533C;
     border-radius: 45px;
     padding: 15px 70px;
     font-size: 20px;
+    margin-bottom: 2rem;
     border: none;
     color: #fff;
     font-weight: bolder;
+}
+.M-desacription-3{
+    
+    max-width: 1400px;
+    margin: auto;
 }
 
 .M-desacription-3 p {
@@ -205,22 +208,19 @@ a:hover {
 }
 
 .sub-tittle {
-    margin: 5rem 5rem 5rem 25rem;
+    margin-left: 10%;
+    width: 50%;
 }
 
 .Calculator-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     background: #222;
-    align-items: center;
     justify-content: space-between;
-    height: 500px;
 }
 
-.BMI-Chart {
-    margin: 2rem 12rem 12rem 12rem;
-    font-size: medium;
-}
+
+
 
 table {
     border-collapse: collapse;
@@ -256,17 +256,13 @@ input[type=text] {
 }
 
 .calculate-item,
-#box-3 {
-    grid-column: span 2;
-
-}
-
+ 
 .box-3 {
     grid-column: span 2;
 }
 
 #button-3 {
-    background-color: rgba(199, 55, 7, 0.858);
+    background-color: #E6533C;
     border-radius: 45px;
     padding: 15px 70px;
     font-size: 20px;
@@ -279,12 +275,19 @@ input[type=text] {
 .M-desacription-4 {
     text-align: center;
     /* margin: 30px; */
-    margin: 50px 100px;
 
 }
 
 .M-desacription-4 p {
     font-size: medium;
+}
+.Trainer-pic {
+    z-index: 3;
+    position: relative;
+}
+.Trainer-pic text{
+    position: absolute;
+    z-index: 5;
 }
 
 .image-4 {
@@ -309,13 +312,12 @@ image div {
     position: absolute;
 }
 
-/* footer related styles */
-.footer-container {
-    position: relative;
+ .footer-container {
+    max-width: 1400px;
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* gap: 2em; */
-    padding: 0px 80px 0px 80px;
+     padding: 0px 80px 0px 80px;
 
 }
 
@@ -331,6 +333,10 @@ footer {
 .menu {
     list-style: none;
 
+}
+.icon-color{
+    color: #E6533C;
+    font-style: italic;
 }
 
 footer p {
@@ -354,4 +360,82 @@ footer a {
 
 }
 
-@media screen and (max-width:576px) and (min-width:577px) {}
+@media screen and (max-width:576px){
+    .nav-items{
+        display: none;
+    }
+    
+.header-desacription {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+nav > img{
+    width: 10%;
+    display: block;
+}
+.image-1 {
+    cursor: pointer;
+    margin-top: 4rem;
+    padding:  auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    color: #ccc;
+    font-size: 0.8em;
+    gap: 15px;
+    align-items: center;
+}
+.about{
+    width: 80%;
+    margin: auto;
+    flex-direction: column;
+
+}
+.about > div{
+    margin: auto;
+    width: 100%;
+    border-radius: 2rem;
+}
+.run{
+    width: 100%;
+    border-radius: 1rem;
+    /* background-color: red; */
+    background-image: url("../image/run.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+
+}
+.M-desacription-2 .about{
+    flex-direction: column;
+}
+.Calculator-section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    background: #222;
+    justify-content: space-between;
+}
+.Calculator-section > div{
+    width: 40%;
+    margin: auto;
+}
+
+.image-4 {
+    width: 80%;
+    background-color: #222;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.footer-container {
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+}
+}

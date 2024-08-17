@@ -6,29 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> My Second Project</title>
     <link rel="stylesheet" href="./style/style.css">
+    <link href="https://db.onlinewebfonts.com/c/be6f31338eebea6cc5467e978fe98ea1?family=Miama+Nueva" rel="stylesheet">
 </head>
 
 <!-- header section -->
 
-<body class="body-container">
-    <header class="header-container">
-        <nav class="navber">
-            <div class="nav-icon">
-                <a href="Fitness">Fitness</a>
-            </div>
-            <div>
-                <ul class="nav-item">
-                    <!-- <li><a href="./image/trainer1.png">Home</a></li> -->
-                    <li><a href="#Home"> <button class="nav-button">Home</button> </a></li>
-                    <li><a href="#Service">Service</a></li>
-                    <li><a href="#Contact">Contact</a></li>
-                    <li><a href="#About">About</a></li>
-                </ul>
-            </div>
+<body>
+    <header class="header-section">
+        <nav class="manu-bar">
+            <h1 class="brand"><i>Fitness</i></h1>
+            <img src="./image/navber_1-removebg-preview.png" alt="">
+            <ul class="nav-items">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Service">Service</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#About">About</a></li>
+            </ul>
         </nav>
+
         <div class="header-desacription">
             <div>
-                <h1> Get body in <br> <span id="shape">shape</span> & stay <br>
+                <h1> Get body in <br> <span id="font">shape</span> & stay <br>
                     healthy
                 </h1>
                 <p> A huge selection of health and fitness content, healthy recipes <br>
@@ -79,7 +77,7 @@
         </section>
 
         <section class="M-desacription-2">
-            <div class="about-items">
+            <div class="about">
                 <div>
                     <h2>Run an Extra <br> Mile Easily</h2>
                     <p>
@@ -90,8 +88,8 @@
                     <button id="button-2"> Join Now </button>
                 </div>
                 <!-- <img src="./image/run.jpg" alt=" run"> -->
-                <div class="image-2">
-                    <img src="./image/run.jpg" alt=" run">
+                <div class="run">
+                    <!-- <img src="./image/run.jpg" alt=" run"> -->
                 </div>
             </div>
         </section>
@@ -145,7 +143,7 @@
                             or access to gym.
                         </p>
                     </div>
-                    <div class="input_fields">
+                    <!-- <div class="input_fields">
                         <input type="text" placeholder="Heigth/cm" class="Height input-box">
                         <input type="text" placeholder="width/kg" class="width input-box">
                         <input type="text" placeholder="Age" class="age input-box">
@@ -160,9 +158,9 @@
                             <option value="gym">Gym</option>
                         </select>
                     </div>
-                    <button id="button-3">Calculate</button>
+                    <button id="button-3">Calculate</button> -->
 
-                    <!-- <div class="calculate-item">
+                    <div class="calculate-item">
                         <div id="box-1">
                             <input type="text" value="  Height / cm">
                             <input type="text" value=" Weight / kg">
@@ -171,11 +169,11 @@
                             <input type="text" value="  Age">
                             <input type="text" value="  Sex">
                         </div>
-                        <div id="box-3">
+                        <div class="box-3">
                             <input type="text" value="  Select an activity factor ">
                         </div>
                         <button id="button-3">Calculate</button>
-                    </div> -->
+                    </div>
                 </div>
             </div>
 
@@ -190,46 +188,57 @@
                 </p>
             </div>
             <div class="image-4">
-                <div class="pic-1">
-                    <h3>Jerome Bell</h3>
-                    <h4>Trainer</h4>
+                <div class=" Trainer-pic">
                     <img src="./image/trainer1.png" alt="trainer1">
+                    <div class="text">
+                        <h3 class="name">Jerome Bell</h3>
+                        <p class="position">Trainer</p>
+                    </div>
                 </div>
-                <div>
-                    <h3>Jerome Bell</h3>
-                    <h4>Trainer</h4>
+                <div class="Trainer-pic">
                     <img src="./image/trainer2.png" alt="trainer2">
+                    <div class="text">
+                        <h3 class="name">Jerome Bell</h3>
+                        <p class="position">Trainer</p>
+                    </div>
                 </div>
-                <div>
-                    <h3>Jerome Bell</h3>
-                    <h4>Trainer</h4>
+                <div class="Trainer-pic">
                     <img src="./image/trainer3.png" alt="trainer3">
+                    <div class="text">
+                        <h3 class="name">Jerome Bell</h3>
+                        <p class="position">Trainer</p>
+                    </div>
                 </div>
-                <div>
-                    <h3>Jerome Bell</h3>
-                    <h4>Trainer</h4>
+                <div class="Trainer-pic">
                     <img src="./image/trainer4.png" alt="trainer4">
+                    <div class="text">
+                        <h3 class="name">Jerome Bell</h3>
+                        <p class="position">Trainer</p>
+                    </div>
                 </div>
-                <div>
-                    <h3>Jerome Bell</h3>
-                    <h4>Trainer</h4>
+                <div class="Trainer-pic">
                     <img src="./image/trainer5.png" alt="trainer5">
+                    <div class="text">
+                        <h3 class="name">Jerome Bell</h3>
+                        <p class="position">Trainer</p>
+                    </div>
                 </div>
-                <div>
-                    <h3>Jerome Bell</h3>
-                    <h4>Trainer</h4>
+                <div class="Trainer-pic">
                     <img src="./image/trainer6.png" alt="trainer6">
+                    <div class="text">
+                        <h3 class="name">Jerome Bell</h3>
+                        <p class="position">Trainer</p>
+                    </div>
                 </div>
-            </div>
         </section>
     </main>
 
     <!-- footer section -->
-    <footer class="footer-section">
+    <footer class="footer-section ">
         <section class="footer-container">
             <section class="f-section-1">
                 <div>
-                    <h2>Fitness</h2>
+                    <h2 class="icon-color">Fitness</h2>
                     <p>
                         We believe fitness should be accessible to everyone,<br>
                         everywhere, regardless of income or access to a gym. With <br>
